@@ -1,0 +1,28 @@
+name: FAQ入力フォーム
+description: FAQ用のissue作成Form
+title: "[FAQ]："
+projects: ["KobeKosenRobotics/6"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ご協力ありがとうございます！以下の情報を記入してください。
+  
+  - type: textarea
+    id: task-overview
+    attributes:
+      label: FAQ概要
+      description: 質問したいこと（なるべくコンテンツ事に）
+      placeholder: ex.)自律移動の足回り制御 
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo-list
+    attributes:
+      label: やって、書いてほしいこと
+      description: 箇条書きでお願いします
+      placeholder: ex.)ソースコード解説付き、ドキュメント、使用要件の記載
+    validations:
+      required: true
